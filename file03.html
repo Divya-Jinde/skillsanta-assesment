@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        size: 40px;
+    }
+</style>
+<body>
+    Enter temparature:<input type="text" id="cf"><br><br>
+    <button onclick="celsius_to_fahreheit()">celsius_to_fahreheit</button>
+    <button onclick="fahrenheit_to_celsius()">fahrenheit to celsius</button>
+    
+    <script>
+        function celsius_to_fahreheit(){
+            var cel_temp = document.getElementById("cf");
+            var ctof = (cel_temp*9/5)+32;
+            document.write(ctof)
+        }
+        function fahrenheit_to_celsius(){
+            var far_temp = document.getElementById("cf");
+            var ftoc = (far_temp-32) * 5/9;
+            document.write(ftoc)
+        }
+    </script>
+</body>
+</html>

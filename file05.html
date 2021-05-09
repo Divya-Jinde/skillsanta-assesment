@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var x =prompt("Enter a number");
+    var y = 0; rem = 0;
+    var temp = x;
+    while(temp>0){
+        rem = temp%10;
+        y = (y*10)+rem;
+        temp = parseInt(temp)//10;
+    }
+    if (x == y){
+        document.write("x is polindrome");
+    }else{
+        document.write("x is not polindrome");
+    }
+    </script>
+</body>
+</html>
